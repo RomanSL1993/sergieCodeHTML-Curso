@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Aqui van los metadatos -->
+    <!-- El primero sirve para coger los caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Esto sirve para que sea responsive y que quepa en todas las demás plataformas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sirve para poner un nombre en la pestaña -->
+    <title>Primera página web</title>
+    <!-- Sirve para crear un metadato que sea del autor que ha realizado la página web -->
+    <meta name="author" content="Roman SL">
+    <meta name="description" content="La primera página web">
+    <!-- Sirve para introducir las palabras clave apra los buscadores -->
+    <meta name="keywords" content="inicio, desarrollo web, HTML5, HTML, html, principiante">
+    <!-- Esta etiqueta sirve para refrescar la página web, se le puede añadir el tiempo que tiene que tardar para refrescarse y redireccionar a otra página web -->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <!-- Se pueden incluir cookies, que se trabajan con Javascript y sirven para evitar que se hagan ataques con expiraciones de tiempo -->
+    <meta http-equiv="cookie" content="user=roman; expires=">
+    <!-- Esto son los estilos que sacará desde otro archivo para dejarlo separado de la página y verlo con mayor claridad -->
+    <link rel="stylesheet" href="/styles/notas.css">
+
+    <link rel="shortcut icon" href="/Assets/images/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Se usa en anidamiento, varios nidos unos dentro de otros, y se cierran. Todos los componentes son keysensitive, si pones en mayúscula algún elemento, este elemento también se hará en mayúsculas o no lo reconocerá. Es importante mantener el estilo de la web como está diseñado para que las búsquedas se relacionen bien y se posicionen correctamente en los motores de búsqueda. -->
+    <header>
+        <!-- Se utiliza para la navegación en niveles -->
+        <nav></nav>
+    </header>
+    <!-- Los títulos van por jerarquias para la página -->
+    <h1>Hola Mundo!!! (Título principal)</h1>
+    <!-- Esta etiqueta permite hace una línea para que divida las partes en la página visible -->
+    <hr>
+    <h2>Título secundario</h2>
+    <h3>Otros títulos</h3>
+    <h4>Otros títulos</h4>
+    <h5>Otros títulos</h5>
+    <h6>Otros títulos</h6>
+    <!-- Se pueden utilizar muchos elementos dentro de uno 
+    * Para poder utilizar atajos de teclado, tenemos los siguientes:
+    Alt+Shift+Flecha abajo => Sirve para copiar lo que tienes arriba en la línea de abajo
+    Alt+Shift+F => Sirve para poner bien el formato de código
+    Ctrl+K+C => Sirve para comentar
+    Ctrl+K+U => Sirve para descomentar -->
+    <section>
+        <!-- Es la etiqueta de párrafo, que sirve para dividerse entre los demás. Para los saltos de línea es necesario usar br -->
+        <p class="parrafo"><b>Lorem ipsum</b> dolor sit amet consectetur adipiscing elit lacinia libero, dis tellus
+            euismod natoque morbi gravida ridiculus penatibus dui urna, facilisis pulvinar eleifend nunc mattis quis
+            lacus aenean.<br />
+            Habitasse rutrum id fames viverra eleifend justo elementum laoreet netus magna tortor sed iaculis sapien,
+            platea posuere fermentum nam convallis leo eget tempor montes nullam per inceptos.
+            <br />Imperdiet vestibulum quam
+            vulputate at cum ullamcorper ante, ac mattis donec ornare aptent varius purus aliquet, tempus morbi dapibus
+            duis enim dui nam, semper mauris gravida cursus turpis parturient.
+        </p>
+        <p class="negrita" style="border: 1px white solid;">Este texto está en negrita: <b>NEGRITA</b></p>
+        <p class="cursiva">Este texto está en cursiva: <i>CURSIVA</i></p>
+
+        <!-- Esta es una etiqueta que afecta a toda la línea -->
+        <p style="background-color: yellow; color: black;">Amarillo</p>
+        <!-- Esto solo afectará al elemento, no a toda la línea -->
+        <b style="background-color: aqua;">Aqua</b>
+        <!-- Estás etiquetas para la página es mejor usar estas etiquetas que las otras, a nivel semántico -->
+        <p>Este texto es importante: <strong>IMPORTANTE</strong></p>
+        <p>Este texto es enfático: <em>ENFÁTICO</em></p>
+        <article>
+            <!-- Esta etiqueta permite mantener el formato que se va a introducir para que lo replique exactamente igual, respeta saltos de página y sangrías -->
+            <pre>
+                Hola Mundo
+                Soy yo, Roman      S      L     Bien!!
+            </pre>
+            <!-- Esta etiqueta permite introducir una cita -->
+            <blockquote>"Locura es hacer la misma cosa una y otra vez esperando obtener diferentes resultados." Albert
+                Einstein</blockquote>
+            <!-- Esta etiqueta pone sola las comillas, sin complicarse demasiado en ello, no se pueden seleccionar las comillas -->
+            <q cite="https://www.lanacion.com">Locura es hacer la misma cosa una y otra vez esperando obtener diferentes
+                resultados.</q>
+        </article>
+        <article>
+            <!-- Se pueden añadir más contenido en diferentes idiomas para indicar que va a ser en otro idioma, además le incluye otro formato -->
+            <p>En Ucrania no existe el fracaso. El fracaso es: <q lang="uk">збій</q></p>
+
+        </article>
+    </section>
+
+    <!-- Esta sección suele ser una parte separada del principal -->
+    <aside>
+        <h2>Teorema de Pitágoras</h2>
+        <hr>
+        <!-- La etiqueta sup sirve para los superíndices, cuidado que no siempre quedan bien dependiendo del tamaño de los contenedores -->
+        <p>hipotenusa<sup>2</sup> = cateto opuesto<sup>2</sup> + cateto adyacente<sup>2</sup></p>
+        <hr>
+        <hr>
+        <h2>COMPOSICIÓN QUÍMICA DEL AGUA</h2>
+        <hr>
+        <!-- La eqtiqueta sub sirve para el subíndice -->
+        <p>Agua es: H<sub>2</sub>O</p>
+        <hr>
+        <hr>
+        <h2>¿Cuántos kilómetos hay desde la tierra hasta la luna?</h2>
+        <hr>
+        <!-- La etiqueta abbr sirve para poder indicar alguna descripción extra cuando se pase el ratón por encima y se mejore la experiencia del usuario, también subraya la palabra con puntos -->
+        <p>Desde la tierra hasta la luna hay 384.000<abbr title="kilómetros">kms</abbr></p>
+        <hr>
+        <hr>
+        <h2>¿Qué significa OMS?</h2>
+        <!-- Pasa lo mismo que con abbr -->
+        <p>Coloca el mouse encima de la palabra para saberlo: <acronym
+                title="Organización Mundial de la Salud">OMS</acronym></p>
+        <hr>
+        <hr>
+    </aside>
+
+    <aside>
+        <!-- Listas -->
+        <h1>Listas</h1>
+        <h2>Animales:</h2>
+        <!-- Con ul es Unorder List del inglés. Por lo que se pone e irá con un punto al inicio de cada palabra -->
+        <ul>
+            <!-- Es necesario indicar siempre para cada elemento de la lista con la etiqueta li -->
+            <li>Perro</li>
+            <li>Gato</li>
+            <li>Canario</li>
+        </ul>
+        <hr>
+        <!-- La lista ordenada va con OL, Order List. Hay que tener en cuenta como se tiene estructurado el diseño de las listas, ya que dejan una separación al inicio. Si quieres eliminar esa separación, es necesario configurarlo para que no aparezca -->
+        <h3>Actividades de hoy</h3>
+        <!-- Podemos elegir como se va a hacer la lista con el atributo type, que te permitirán varias opciones -->
+        <ol type="A">
+            <li>Lavarse los dientes</li>
+            <li>Ir a hacer la compra</li>
+            <ul>
+                <li>Café</li>
+                <li>Azúcar</li>
+                <li>Arroz</li>
+                <li>Chocolate</li>
+            </ul>
+            <li>Cocinar y comer</li>
+            <!-- Con el atributo Start, nos permite empezar una lista ordenada por un número que queramos -->
+            <ol start="0">
+                <li>Cocinar</li>
+                <!-- Con el atributo reversed, nos permite invertir los números de la lista ordenada -->
+                <ol reversed>
+                    <li>Calentar el agua</li>
+                    <li>Poner los espaguetis</li>
+                    <li>Esperar 10 minutos</li>
+                    <li>Añadir las especies</li>
+                </ol>
+                <li>Comer</li>
+            </ol>
+            <li>Estudiar el curso de HTML</li>
+            <li>Dormir</li>
+        </ol>
+        <hr>
+        <hr>
+        <h1>Tablas</h1>
+        <h2>Tabla de mis alumnos</h2>
+        <!-- Para que aparezca la tabla, es necesario añadirle estilos -->
+        <table>
+            <!-- Esto son las filas -->
+            <colgroup>
+                <!-- Esto sirve para poder añadir diferentes formatos a las tablas y que aparezcan de mnaera más limpia o añadirle estilos que queramos para las columnas que tenemos -->
+                <col style="background-color: black;">
+                <col style="background-color: rgb(75, 75, 75);">
+                <col style="background-color: grey">
+                <col style="background-color: rgb(75, 75, 75);">
+                <col style="background-color: grey">
+            </colgroup>
+            <tr>
+                <!-- Esto son las columnas. Siempre se insertan dentro de las filas las columnas correspondientes -->
+                <!-- El carácter especial &nbsp; se utiliza para poner un espacio en blanco. Cuidado porque no hace salto de línea -->
+                <td>&nbsp;</td>
+                <!-- Se utiliza la etiqueta th para indicar el header de la tabla -->
+                <th>Pedro</th>
+                <th>Ricardo</th>
+                <th>Anabell</th>
+                <th>María</th>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>21</td>
+                <td>22</td>
+                <td>25</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Materia</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>React</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Promedio</td>
+                <td>8</td>
+                <td>5</td>
+                <td>9</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Aprobado</td>
+                <td>Sí</td>
+                <td>Sí</td>
+                <td>Sí</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Años cursados</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <hr>
+        <hr>
+        <h1>Forma de agrupar</h1>
+        <h2></h2>
+        <!-- Es una etiqueta que se usa mucho en el código para poder dividir por partes. Esta etiqueta coge todo el espacio hasta realizar el salto de línea, es un agrupador en bloque -->
+        <div>
+            <h3>Título secundario</h3>
+            <p>Este es el contenido del artículo. Para más información pulsar en la imagen</p>
+            <a href="https://www.bing.com/ck/a?!&&p=4c98a65e3f27c5b5JmltdHM9MTcwNjQ4NjQwMCZpZ3VpZD0zMzQxYjQxZS02MDEzLTZiNzEtMWNkMi1hNmNhNjFiYjZhOTYmaW5zaWQ9NTUxNQ&ptn=3&ver=2&hsh=3&fclid=3341b41e-6013-6b71-1cd2-a6ca61bb6a96&psq=programador&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUHJvZ3JhbWFkb3I&ntb=1"
+                target="_blank" rel="noopener noreferrer">
+                <img src="/Assets/images/programar.jpg" alt="Programar código con café" height="200px">
+            </a>
+            <!-- La etiqueta br sirve para realizar un salto de línea. Lo recomendable es cerrar la etiqueta para indicar que es única -->
+            <br />
+            Para aprender a programar <a href="https://es.wikipedia.org/wiki/Programador" target="_blank">pulsa aquí</a>
+        </div>
+        <!-- Esta es la etiqueta de agrupador de línea -->
+        <span>
+            <strong>El día de hoy es:</strong> <em>29/01/2024</em>
+        </span>
+        <hr>
+        <hr>
+        <!-- Los iframe hace referencia a programas de terceros que quieres insertar en tu página web para que se pueda utilizar sin incurir en delitos. El ejemplo más utilizado es de youtube, en la sección de compartir tienes una pestaá de insertar que te permite descargar el vídeo. -->
+        <h1>Iframe</h1>
+        <h2>Vídeo insertado de YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TcDgHrm76ro?si=sVHoNGmgpAbsnjHa"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <!-- Se puede también insertar páginas web enteras en un pedazo para que se pueda utilizar -->
+        <hr>
+        <h2>Wikipedia en nuestra página</h2>
+        <iframe src="https://es.wikipedia.org/wiki/Programador" width="100%" height="200px" frameborder="1"></iframe>
+    </aside>
+    <hr>
+    <hr>
+    <!-- Es el pie de página donde termina la página -->
+    <footer>
+        <!-- Es una etiqueta para poder introducir un link. La propiedad target sirve para que se abran nuevas pestañas -->
+        <a href="https://www.youtube.com/watch?v=bNV6iw13Rnk&list=PLGWlGfrzoFAYT1teXCFeVzh4aqz-Lvq1q&ab_channel=SergieCode"
+            target="_blank">Haz click aquí para acceder al curso de HTML de Sergie Code</a><br />
+        <!-- Si añadimos al principio mailto: sirve para indicar que se trata de un mail y abrirá para escribirlo -->
+        <a href="mailto:s.roman3991@gmail.com">Enviar correo electrónico</a><br />
+        <!-- Si añadimos tel: sirve para indicar un número de teléfono -->
+        <a href="tel:+34649483473">Llamar a Roman</a><br />
+        <hr>
+        <!-- La etiqueta de imágenes no se cierra y lleva todos los atributos dentro de la etiqueta. Se recomienda rellenar alt con indormación relevante para mejorar el SEO. Se puede ajustar el alto y el ancho de la imagen para que se quede como queremos. -->
+        <img src="/Assets/images/react.jpg" alt="Logo de react con el espacio" width="300px" height="200px">
+        <!-- La etiqueta video. Se puede añadir el atributo autoplay para que se reproduzca solo. Es necesario añadir el atributo controls para poder usarse los controladores y pararlo. Se puede añadir el atributo muted para que esté silenciado. Los mismos atributos de las imágenes se pueden utilizar para el diseño del video.  -->
+        <video src="" autoplay controls></video>
+        <!-- Se puede añadir más atributos para que se pueda aparecer con un mensaje de error en caso de que no aparezca en el formato. Se puede añadir el atributo poster para poder dejar una foto encima del vídeo para que aparezca. -->
+        <video controls autoplay width="500px" poster="/Assets/images/react.jpg">
+            <source src="" type="video/mp4">
+            <p>El vídeo no se puede reproducir en este navegador. Por favor, descárgalo en este <a href="">enlace para
+                    poder visualizarlo</a>.</p>
+        </video>
+        <!-- Para crea comentarios rápidos se usa Ctrl+ç -->
+        <!-- El elemento de audio se añade de la misma manera que los vídeos y las imágenes, se tiene que añadir controls para que aparezcan los controladores -->
+        <audio controls autoplay>
+            <source src="">
+            <p>Indicación de la canción de fondo que va a sonar <a href="">La puedes descargar aquí</a></p>
+        </audio>
+        <hr>
+        <hr>
+        <h1>Formularios</h1>
+        <!-- El formulario tiene que ser enviado y tratado a otra página que nosotros utilicemos y se hará mediante el back-end. Hay 2 tipos de métodos para enviar la información, el get, que se pasará mediante la url toda la información, incluída la contraseña, y el método post, que lo pasará por detrás y no añadirá nada en la URL. El target se puede utilizar al igual que en los enlaces para redirigir a una nueva página -->
+        <form action="envio.php" method="post" target="_blank">
+            <!-- La etiqueta label sirve para indicar lo que se va a introducir, va de la mano con el Name del input -->
+            <label for="usuario">Usuario:</label>
+            <!-- Esto nos permite conocer como serán los atributos del input, que es una etiqueta de formularios para la entrada de datos por parte del usuario. Los valores que se utilizan son el type, para el tipo de input que será; id, comoidentificador del input; name, para el nombre, en caso de usar un mismo id se puede buscar por nombre; size, es el tamaño que ocupará, también se puede desarrollar por estilos; value, es el valor por defecto que aparecerá; placeholder, es un texto indicativo que aparece en gris para indicar mayor información, no es compatible con value; si ponemos el atributo readonly, entonces no se puede modificar el valor introducido; si añadimos el atributo disabled, esto no permitirá selección alguna y quedará marcado como que no se puede utilizar; el atributo maxlenght, nos permite limitar el número de caracteres que podemos añadir, se limita automáticamente; el atributo pattern, sirve para po0der indicar una expresión regular, lo que solo permitirá introducir caracteres específicos, evitando el resto de los mismo. Required, sirve para que se indique de manera obligatoria para poder enviarse -->
+            <input type="text" id="usuario"  name="nombre" value="Usuario" placeholder="Introduzca el usuario" readonly disabled maxlength="25" pattern="[A-Za-z]{10}" required/>
+            <!-- La etiqueta small sirve para que se haga una anotación en tamaño más pequeño -->
+            <small>Debe tener 10 caracteres</small>
+            <br/>
+            <label for="mail">Introduzca su e-mail</label>
+            <!-- el tipo email sirve para que se pueda introducir el mail directamente, manteniendo el pattern de mail para que lo compruebe automáticamente -->
+            <input type="email" placeholder="Introduzca su mail">
+            <br/>
+            <label for="password">Contraseña:</label>
+            <!-- El input puede tener diferentes tipos, el de password lo que hace es que aparezcan puntitos en vez de letras para que no se pueda ver la contraseña -->
+            <input type="password" id="password"  name="password" placeholder="Introduzca su contraseña" required/>
+            <br/>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <!-- El input fecha permite que se quede guardada una fecha, depende de como se guarde en el navegador. El atributo max, nos permite añadir una fecha límite a la que podemos ingresar, por ejemplo una fecha de nacimiento no puede ser futura, se tiene que indicar aaaa-MM-dd -->
+            <input type="date" id="fecha" name="fecha" max="2024-01-30">
+            <br/>
+            <!-- Checbox, se usa para indicar una casilla a la que tiene que seleccionar. Se pueden seleccionar multiples veces diferentes checkboxes porque cada uno es único e indica con un valor true o false si se ha seleccionado o no -->
+            <input type="checkbox" id="condiciones" name="condiciones"/> ¿Estás de acuerdo con las condiciones?
+            <br/>
+            <!-- Cuando usamos el radio, esta información solo va a estar disponible para seleccionar uno entre ellos. El name tiene que ser único para que no permita más de una selección -->
+            <label for="lenguaje">Seleccione su lenguaje:</label>
+            <br/>
+            <!-- Para añadir el required es necesario ponerlo en todos los campos del radio para solicitarlo -->
+            <input type="radio" name="lenguaje" name="HTML" required/>HTML
+            <input type="radio" name="lenguaje" name="CSS" required/>CSS
+            <input type="radio" name="lenguaje" name="JavaScript" required/>JavaScript
+            <input type="radio" name="lenguaje" name="React" required/>React
+            <br/>
+            <!-- El atributo number, sirve para indicar únicmanete con números -->
+            <label for="programando">Años programando:</label>
+            <!-- Las etiquetas max y min son los números que nos permiten mantener un margen entre ambos. Si no lo cumplimos, nos mostrará un mensaje de error que indica el máximo o el mímo posible -->
+            <input type="number" id="programando" name="programando" placeholder="Años programando" min="1" max="99"/>
+            <br/>
+            <!-- El atributo file sirve para subir archivos que se vayan a enviar -->
+            <label for="cv">Curriculum Vitae:</label>
+            <!-- Se puede añadir el atributo multiple para añadir más de un archivo -->
+            <input type="file" id="cv" name="cv" placeholder="Inserte aquí su CV" multiple/>
+            <br/>
+            <br/>
+            <label for="opinion">Deje aquí su opinión</label>
+            <!-- El textarea sirve para poder introducir más texto y que sea visible para el usuario. Esta etiqueta se cierra y se puede introducir dentro otras etiquetas. Se puede agrander o hacer más pequeño. Los atributos cols, es para el ancho, y rows, es para el alto, permiten hacer más grande el espacio del textarea, que permite que se vea más grande o pequeño, aunque el usuario puede hacerlo más grande o pequeño después. -->
+            <textarea id="opinion" name="opinion" placeholder="Deja aquí su opinión" cols="50" rows="5"></textarea>
+            <br/>
+            <label for="pais">Seleccione su país de origen:</label>
+            <!-- El select sirve para poder introducir diferentes opciones que aparecerán en un dropdown. El value y el nombre no tienen que ser iguales, solo se pasará el value para el programa, se puede acoertar, recordar utilizar las opciones acortadas. Dentro de select se ponen las etiquetas option para los diferentes opciones que dispondremos en el dropdown de la página. -->
+            <select name="pais" id="pais">
+                <optgroup label="Hisponoparlantes">
+                    <option value="arg">Argentina</option>
+                    <option value="col">Colombia</option>
+                    <!-- Si ponemos el atributo selected, entonces lo que se hará será seleccionar de base esa opción, aunque no sea la primera -->
+                    <option value="esp" selected>España</option>
+                    <option value="ven">Venezuela</option>
+                    <option value="mex">México</option>
+                </optgroup>
+                <!-- Los optgroup sirven para pdoer dividir las opciones de manera más comprensible para el usuario. no son seleccionables y aparecerán los nombres que tengamos en el atributo label que le hayamos indicado -->
+                <optgroup label="Ingleses">
+                    <option value="ing">Inglaterra</option>
+                    <option value="usa">Estados Unidos de América</option>
+                    <option value="aus">Australia</option>
+                </optgroup>                
+            </select>
+            <hr>
+            <!-- Los botones son lo que se utiliza para poder enviar los datos de los formularios creados. El submit es el que hace la función. Podemos programar el button con otras funciones que queramos mediante JavaScript, y el Reset sirve para poder reiniciar todo el formulario a como estaba al principio. -->
+            <!-- Alert() sirve para que aparezca una pestaña emergente con un texto -->
+            <input type="button" value="Botón" onclick="alert('Has pulsado el botón')">
+            <!-- La etiqueta button hace envío de la información directamente como si fuera un submit -->
+            <button onclick="alert('Has pulsado el otro botón')">Otro botón</button>
+            <!-- Hay que preparar el tema del submit para que no se pueda hackear y eliminar atributos para entrar, se controla en back-end -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Borrar">
+        </form>
+        <hr>
+        <hr>
+        <h1>SVG e íconos</h1>
+        <!-- SVG es un formato de imagen que lo dibuja el propio navegador. Usa pocos recursos, nunca se pixela y se hace mediante vectores. Si la sacas de internet, se importará solo para que se pueda introducir en el HTML -->
+        <svg width="300px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M143.8 500.4h156.5l58.4-120.3 92.9 363.1L494.7 497h48.9l34 86.1 43.6-181.7 59.5 246.5 38.6-154.1h191.9s40.5-167.7-48.9-244.1c-107.7-92.1-204.5-56.6-298.3 38l-50.1 53.5-45.4-46.7S389.1 190 292.6 204.6c-89.1 13.5-205 120.5-148.8 295.8z" fill="#F9C0C0"></path><path d="M513.7 903.1l-4.3-2.5c-0.3-0.2-39.2-22.4-95.8-63.6-52.2-37.9-130.6-100.3-208-181.8-35.2-37-62.3-75.9-80.7-115.5l13.6-6.3c17.7 38.1 43.9 75.7 77.9 111.5 134.9 142 274.5 227.4 297.2 240.8 22.9-13.6 162.5-99 297.2-240.8 36.7-38.7 64.3-79.2 81.9-120.5 15.8-36.8 23.7-74.3 23.5-111.3-0.2-62.8-24.4-124.2-66.4-168.4-35.9-37.8-83.7-58.6-134.7-58.6s-98.9 20.8-134.7 58.6l-66.8 70.4-66.8-70.4c-35.9-37.8-83.7-58.6-134.7-58.6s-98.9 20.8-134.7 58.6c-25.5 26.8-44.8 60.4-55.8 97.1-12.7 42.3-14 86.3-3.9 131l-14.6 3.3c-10.7-47.2-9.3-93.8 4.2-138.6 11.7-39 32.2-74.6 59.3-103.1 38.7-40.8 90.4-63.2 145.6-63.2s106.9 22.5 145.6 63.2l55.9 58.9 55.9-58.9c38.7-40.8 90.4-63.2 145.6-63.2s106.9 22.5 145.6 63.2c44.5 46.9 70.2 112 70.5 178.6 0.1 39.1-8.2 78.6-24.7 117.3-18.4 42.9-46.9 84.9-84.9 124.9-77.4 81.5-155.9 143.9-208 181.8-56.6 41.2-95.5 63.4-95.9 63.6l-4.1 2.5z" fill="#999999"></path><path d="M454.1 769.3l-96.6-377.4-54.7 116.5H76.6v-8h221.1l62.1-132.1 92.6 362L491.3 493h54.9l30.4 76.8 44.5-185.6 59.6 246.9 35.4-141.3h235v8H722.3l-41.8 166.8-59.4-246.2-42.6 177.9-37.7-95.3H498z" fill="#CE0202"></path></g></svg>
+    </footer>
+    <!-- Este es el código de Javascript que va dentro del site y se va a utilizar, va detrás de todo el código al final. Para acceder a una carpeta superior, es necesario indicarlo con 2 puntos y la ruta -->
+    <script src="/index.html"></script>
+</body>
+
+</html>

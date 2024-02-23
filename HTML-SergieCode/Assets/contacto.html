@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Assets/images/Magic/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/mana-cost.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <title>Contacto | Ritos sangrientos | Vampiros | Magic the gathering</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Magic The Gathering (Ritos Sangrientos)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modo-de-juego.html">Modo de juego</a></li>
+                <li><a href="cartas.html">Cartas</a></li>
+                <li><a href="cambios.html">Cambios</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+                <li><a href="mana-cost.html">Imágenes de Mana</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px; text-align: center;">Formulario de contacto</h2>
+    <hr>
+
+    <div class="contenedor-formulario">
+        <form action="">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Indique su nombre" required minlength="3">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Indique su apellido">
+            <label for="mail">e-mail: </label>
+            <input type="email" id="mail" name="mail" placeholder="Indique su correo electrónico" required>
+            <label for="pais">País de procedencia: </label>
+            <select id="pais" name="pais">
+                <option value="es">España</option>
+                <option value="fr">Francia</option>
+                <option value="de">Alemania</option>
+                <option value="po">Portugal</option>
+                <option value="it">Italia</option>
+            </select>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" placeholder="Escriba aquí su comentario, duda o sugerencia" required></textarea>
+            <label for="respuesta">¿Desea recibir una respuesta a su comentario?:</label>
+            <input type="radio" id="respuesta" name="respuesta" required>Sí, por favor
+            <input type="radio" id="respuesta" name="respuesta" required>No, gracias
+            <input type="submit" value="Enviar">          
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos de opinión reservados.<br />
+            Todo el contenido mostrado ha sido sacado de Wizards of the Coast de su producto<br />
+            &copy; 2023 Magic The Gathering</p>
+    </footer>
+
+</body>

@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid white;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+td{
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+th{
+    border: 1px solid white;
+    padding: 10px 20px;
+    background-color: rgb(173, 173, 173);
+}
